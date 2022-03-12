@@ -24,6 +24,555 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
   <!--스와이퍼 css-->
   <script>new WOW().init();</script>
+  <style>
+      /* 폰트적용 */
+@font-face {
+    font-family: 'LeferiBaseType-RegularA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html > body {
+  font-family: "LeferiBaseType-RegularA";
+}
+
+/*커스텀 라이브러리*/
+*{
+  padding:0;
+  margin:0;
+}
+
+.con{
+  width:1920px;
+  margin:0 auto;
+}
+
+@media ( min-width: 1900px ) {
+  body { overflow-x:hidden; }
+}
+
+/*뜨는애니메이션 라이브러리*/
+
+.festival-snoow,.attraction-1-1,.enjoy-2-1,.enjoy-3-3, .enjoy-4-3,.enjoy-5-3,.enjoy-6-1-2{
+  animation-name: infinite-01 ;
+  animation-duration: 6s;
+  animation-iteration-count: infinite ;
+  animation-timing-function: linear ; 
+}
+
+
+@keyframes infinite-01{
+  0%{
+    transform: translatey(0) ;
+  }
+  
+  50%{
+    transform: translatey(-5%);    
+  }
+  
+  100%{
+    transform: translatey(0);    
+  }
+  
+}
+
+/*top-bar*/
+.top-bar{
+  
+
+ z-index :99;
+  
+  
+  height:130px;
+  width:1920px;
+}
+.top-bar-top{
+  background-color:white;
+  width:1920px;
+  height:50px;
+}
+.top-bar-1{
+  height:50px;
+  width:1920px;
+  z-index:-2;
+  
+  
+}
+
+.top-bar-1-1{
+  left:213px;
+  top:10px;
+}
+.top-bar-1-1:hover{
+filter: invert(68%) sepia(16%) saturate(1164%) hue-rotate(315deg) brightness(120%) contrast(80%);
+}
+
+.top-bar-1-2{
+  left:361px;
+  top:9px;
+}
+
+.top-bar-1-2:hover{
+filter: invert(68%) sepia(16%) saturate(1164%) hue-rotate(315deg) brightness(120%) contrast(80%);
+}
+
+.top-bar-1-3{
+  left:552px;
+  top:10.8px;
+}
+
+.top-bar-1-3:hover{
+filter: invert(68%) sepia(16%) saturate(1164%) hue-rotate(315deg) brightness(120%) contrast(80%);
+}
+
+.top-bar-1-4{
+  left:1346px;
+  top:14px;
+}
+
+.top-bar-1-4:hover{
+filter: invert(68%) sepia(16%) saturate(1164%) hue-rotate(315deg) brightness(120%) contrast(80%);
+}
+.top-bar-1-5{
+  left:1439px;
+  top:14px;
+}
+
+.top-bar-1-5:hover{
+filter: invert(68%) sepia(16%) saturate(1164%) hue-rotate(315deg) brightness(120%) contrast(80%);
+}
+.top-bar-1-6{
+  left:1532px;
+  top:14px;
+}
+
+.top-bar-1-6:hover{
+filter: invert(68%) sepia(16%) saturate(1164%) hue-rotate(315deg) brightness(120%) contrast(80%);
+}
+.top-bar-1-7{
+  left:1593px;
+  top:14px;
+}
+
+.top-bar-1-7:hover{
+filter: invert(68%) sepia(16%) saturate(1164%) hue-rotate(315deg) brightness(120%) contrast(80%);
+}
+.top-bar-1-8{
+  left:1672px;
+  top:9.8px;
+}
+
+.top-bar-1-8:hover{
+filter: invert(68%) sepia(16%) saturate(1164%) hue-rotate(315deg) brightness(120%) contrast(80%);
+}
+
+
+.top-bar-bottom{
+background-image:url('https://cdn.jsdelivr.net/gh/chaeryeong1/lotteworld/top-bar-2/image 19 1 1.png');
+  width:1920px;
+  height:833px;
+}
+
+.top-bar-2-1{
+  top:6.78px;
+  left:206px;
+}
+.top-bar-2-2{
+  left:443px;
+    top:27px;
+}
+.top-bar-2-2:hover{
+filter: invert(28%) sepia(298%) saturate(5800%) hue-rotate(328deg) brightness(85%) contrast(154%); 
+}
+.top-bar-2-3{
+  top:27px;
+  left:593px;
+}
+
+.top-bar-2-3:hover{
+filter: invert(28%) sepia(298%) saturate(5800%) hue-rotate(328deg) brightness(85%) contrast(154%); 
+}
+.top-bar-2-4{
+  top:28px;
+  left:793px;
+}
+
+.top-bar-2-4:hover{
+filter: invert(28%) sepia(298%) saturate(5800%) hue-rotate(328deg) brightness(85%) contrast(154%); 
+}
+.top-bar-2-5{
+  top:28px;
+  left:981px;
+}
+
+.top-bar-2-5:hover{
+filter: invert(28%) sepia(298%) saturate(5800%) hue-rotate(328deg) brightness(85%) contrast(154%); 
+}
+.top-bar-2-6{
+  top:28px;
+  left:1149px;
+}
+
+.top-bar-2-6:hover{
+filter: invert(28%) sepia(298%) saturate(5800%) hue-rotate(328deg) brightness(85%) contrast(154%);  
+}
+
+.top-bar-2-7{
+  top:11.5px;
+  left:1378px;
+}
+
+.top-bar-2-7:hover{
+filter: invert(28%) sepia(298%) saturate(5800%) hue-rotate(328deg) brightness(85%) contrast(154%); 
+}
+
+.top-bar-2-8{
+  top:4.5px;
+  left:1446px;
+}
+
+.top-bar-2-8:hover{
+filter: invert(28%) sepia(298%) saturate(5800%) hue-rotate(328deg) brightness(85%) contrast(154%); 
+}
+
+.top-bar-2-9{
+  top:11.5px;
+  left:1521px;
+}
+
+.top-bar-2-9:hover{
+filter: invert(28%) sepia(298%) saturate(5800%) hue-rotate(328deg) brightness(85%) contrast(154%); 
+}
+
+.top-bar-2-10{
+  top:8.5px;
+  left:1586px;
+}
+
+.top-bar-2-10:hover{
+filter: invert(28%) sepia(298%) saturate(5800%) hue-rotate(328deg) brightness(85%) contrast(154%); 
+}
+
+.top-bar-2-11{
+  top:11.5px;
+  left:1667px;
+}
+
+.top-bar-2-11:hover{
+filter: invert(28%) sepia(298%) saturate(5800%) hue-rotate(328deg) brightness(85%) contrast(154%); 
+}
+.top-bar-2-12{
+left:771px;
+  top:375px;
+}
+
+
+
+/*enjoy-2*/
+
+.enjoy-2{
+  width:1920px;
+  height:1000px;
+  background-color:white;
+}
+.enjoy-2-1{
+  left:47px;
+  top:59px;
+}
+.enjoy-2-2{
+  top:219px;
+  left:858px;
+
+}
+.enjoy-2-3{
+  top:171px;
+  left:194px;
+}
+
+.enjoy-2-4{
+  top:805px;
+  left:1119px;
+}
+.enjoy-2-5{
+  top:465px;
+  left:398px;
+}
+
+
+/*enjoy-3*/
+
+.enjoy-3{
+  background-image:url('https://cdn.jsdelivr.net/gh/chaeryeong1/lotteworld/enjoy-3/enjoy-3-bg.png');
+  width:1920px;
+  height:1400px;
+}
+.enjoy-3-1-1{
+  left:0px;
+  top:374px;
+}
+.enjoy-3-1{
+ left:664px;
+  top:28px;
+}
+
+.enjoy-3-2{
+ left:119.63px;
+  top:278px;
+}
+
+.enjoy-3-3{
+ left:28px;
+  top:177.63px;
+}
+
+.enjoy-3-4{
+ left:594px;
+  top:1119px;
+}
+
+.enjoy-3-5{
+ left:845px;
+  top:1276px;
+}
+
+/*enjoy-4*/
+.enjoy-4{
+  background-image:url('https://cdn.jsdelivr.net/gh/chaeryeong1/lotteworld/enjoy-4/bg.png');
+  width:1920px;
+  height:1500px;
+}
+.enjoy-4-1-1{
+  left:0px;
+  top:0px;
+}
+.enjoy-4-1{
+ left:664px;
+  top:50px;
+}
+
+.enjoy-4-2{
+ left:91px;
+  top:301px;
+}
+
+.enjoy-4-3{
+ left:29px;
+  top:230px;
+}
+
+.enjoy-4-4{
+ left:541px;
+  top:1180px;
+}
+
+.enjoy-4-5{
+ left:845px;
+  top:1340px;
+}
+
+.enjoy-5{
+  background-image:url('https://cdn.jsdelivr.net/gh/chaeryeong1/lotteworld/enjoy-5/bg.png');
+  width:1920px;
+  height:1500px;
+}
+.enjoy-5-1-1{
+  left:0px;
+  top:0px;
+}
+.enjoy-5-1{
+ left:650px;
+  top:48px;
+}
+
+.enjoy-5-2{
+ left:69px;
+  top:321px;
+}
+
+.enjoy-5-3{
+ left:405px;
+  top:163px;
+}
+
+.enjoy-5-4{
+ left:363px;
+  top:1182px;
+}
+
+.enjoy-5-5{
+ left:844px;
+  top:1345px;
+}
+
+.enjoy-6{
+  background-image:url('https://cdn.jsdelivr.net/gh/chaeryeong1/lotteworld/enjoy-6/bg.png');
+  width:1920px;
+  height:1500px;
+}
+.enjoy-6-1-1{
+  left:0px;
+  top:0px;
+}
+.enjoy-6-1-2{
+  left:0px;
+  top:94px;
+}
+.enjoy-6-1{
+ left:515px;
+  top:59px;
+}
+
+.enjoy-6-2{
+ left:45px;
+  top:332px;
+}
+
+.enjoy-6-3{
+ left:405px;
+  top:163px;
+}
+
+.enjoy-6-4{
+ left:423px;
+  top:1177px;
+}
+
+.enjoy-6-5{
+ left:844px;
+  top:1341px;
+}
+
+.enjoy-7{
+  background-image:url('https://cdn.jsdelivr.net/gh/chaeryeong1/lotteworld/enjoy-7/bg.png');
+  width:1920px;
+  height:1500px;
+}
+.enjoy-7-1-1{
+  left:0px;
+  top:0px;
+}
+
+.enjoy-7-1{
+ left:590px;
+  top:55px;
+}
+
+.enjoy-7-2{
+ left:128.85px;
+  top:315px;
+}
+
+.enjoy-7-3{
+ left:460px;
+  top:1181px;
+}
+
+.enjoy-7-4{
+ left:423px;
+  top:1177px;
+}
+
+.enjoy-7-5{
+ left:845px;
+  top:1357px;
+}
+
+
+
+.goods-food{
+  background-image:url('https://cdn.jsdelivr.net/gh/chaeryeong1/lotteworld/goods food/bg.png');
+  width:1920px;
+  height:1200px;
+}
+
+.goods-food-1-1{
+  left:675px;
+  top:10px;
+}
+.goods-food-1{
+ left:954px;
+  top:220px;
+}
+
+.goods-food-2{
+  left:1120px;
+  top:16px;
+}
+.goods-food-3{
+  left:0px;
+  top:190px;
+}
+.goods-food-4{
+  left:369px;
+  top:363px;
+}
+.goods-food-5{
+  left:789px;
+  top:363px;
+}
+.goods-food-6{
+  left:1193px;
+  top:363px;
+}
+.goods-food-7{
+  left:172px;
+  top:775px;
+}
+.goods-food-8{
+  left:593px;
+  top:775px;
+}
+.goods-food-9{
+  left:1013px;
+  top:775px;
+}
+.goods-food-10{
+  left:1425px;
+  top:775px;
+}
+
+.footer-bar{
+  background-image:url('https://cdn.jsdelivr.net/gh/chaeryeong1/lotteworld/footer-bar/footer-bar-bg.png');
+  width:1920px;
+  height:220px;
+}
+
+.footer-bar-1{
+  left:293px;
+  top:23px;
+  
+}
+.footer-bar-2{
+  left:1470px;
+  top:13px;
+  
+}
+.footer-bar-3{
+  left:1530px;
+  top:13px;
+  
+}
+.footer-bar-4{
+  left:1590px;
+  top:13px;
+  
+}
+.footer-bar-5{
+  left:293px;
+  top:79px;
+  
+}
+
+.footer-bar-6{
+  left:293px;
+  top:115px;
+}
+.footer-bar-7{
+  left:1469px;
+  top:115px;
+}
+  </style>
 </head>
 <body>
     <div class="con">
